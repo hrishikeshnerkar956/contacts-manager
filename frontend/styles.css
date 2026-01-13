@@ -1,0 +1,157 @@
+/* Global */
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f6f8, #e9eef3);
+    margin: 0;
+    padding: 40px;
+    color: #2c3e50;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* Form */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin: 6px 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Buttons */
+button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Edit / Delete differentiation */
+td button:first-child {
+    background: #27ae60;
+}
+
+td button:first-child:hover {
+    background: #1e8449;
+}
+
+td button:last-child {
+    background: #e74c3c;
+}
+
+td button:last-child:hover {
+    background: #c0392b;
+}
+
+/* Search Input */
+#searchInput {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: #ecf0f1;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    cursor: pointer;
+    user-select: none;
+    color: #34495e;
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+tr:hover {
+    background: #f1f7ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        font-size: 13px;
+    }
+}
+
+/* Validation Messages */
+#message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#message.error {
+    background: #fdecea;
+    color: #c0392b;
+    border: 1px solid #e74c3c;
+}
+
+#message.success {
+    background: #eafaf1;
+    color: #1e8449;
+    border: 1px solid #27ae60;
+}
