@@ -26,9 +26,6 @@ cd backend
 npm install
 npm start
 
-## With Docker
-docker-compose up --build
-
 ## API Endpoints
 
 - POST /api/contacts
